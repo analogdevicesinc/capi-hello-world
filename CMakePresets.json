@@ -1,0 +1,74 @@
+{
+    "version": 7,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 27,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "max32655fthr",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-maxim/max32655fthr",
+            "cacheVariables": {
+                "PLATFORM": "maxim",
+                "BOARD": "max32655fthr",
+                "TARGET": "max32655",
+                "USE_VENDOR_TOOLCHAIN": "OFF"
+            }
+        },
+        {
+            "name": "max32650fthr",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-maxim/max32650fthr",
+            "cacheVariables": {
+                "PLATFORM": "maxim",
+                "BOARD": "max32650fthr",
+                "TARGET": "max32650",
+                "USE_VENDOR_TOOLCHAIN": "OFF"
+            }
+        },
+        {
+            "name": "dk-e8-rtss-hp",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-alif/rtss_hp",
+            "cacheVariables": {
+                "PLATFORM": "alif",
+                "BOARD": "dk-e8/rtss_hp",
+                "TARGET": "dk-e8_rtss_hp"
+            }
+        },
+        {
+            "name": "dk-e8-rtss-he",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-alif/rtss_he",
+            "cacheVariables": {
+                "PLATFORM": "alif",
+                "BOARD": "dk-e8/rtss_he",
+                "TARGET": "dk-e8_rtss_he"
+            }
+        },
+        {
+            "name": "nucleo-h753zi",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-stm32/nucleo-h753zi",
+            "cacheVariables": {
+                "PLATFORM": "stm32",
+                "BOARD": "nucleo-h753zi",
+                "TARGET": "stm32h753",
+                "USE_VENDOR_TOOLCHAIN": "ON"
+            }
+        },
+        {
+            "name": "nucleo-c5a3zg",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-stm32/nucleo-c5a3zg",
+            "cacheVariables": {
+                "PLATFORM": "stm32",
+                "BOARD": "nucleo-c5a3zg",
+                "TARGET": "stm32c5a3",
+                "USE_VENDOR_TOOLCHAIN": "ON"
+            }
+        }
+    ]
+}
