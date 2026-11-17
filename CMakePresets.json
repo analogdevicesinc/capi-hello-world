@@ -69,6 +69,17 @@
             }
         },
         {
+            "name": "eval-adin1110ebz",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-stm32/eval-adin1110ebz",
+            "cacheVariables": {
+                "PLATFORM": "stm32",
+                "BOARD": "eval-adin1110ebz",
+                "TARGET": "stm32l4s5",
+                "USE_VENDOR_TOOLCHAIN": "ON"
+            }
+        },
+        {
             "name": "nucleo-h753zi",
             "generator": "Ninja",
             "binaryDir": "${sourceDir}/build-stm32/nucleo-h753zi",
